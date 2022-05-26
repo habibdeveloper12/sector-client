@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Miniature Power Saws",
+    "short": "Since electronics often involves working with things that are small,there usually isn’t a need for something like a full-up table saw",
+    "image": "https://www.oreilly.com/content/wp-content/uploads/sites/2/2019/06/pect_0337-b595c78faa009b8c4e529297412cdbb0.png",
+    "minQuantity": 2,
+    "availableQuantity": 10,
+    "price": 230
+  },
+  {
+    "name": "Screwdrivers",
+    "short": "For every screw type there is a  screwdriver. For most tasks, a basic selection of screwdrivers, such as the ones shown in Figure 1-1, is all you’ll need.",
+    "image": "https://www.oreilly.com/content/wp-content/uploads/sites/2/2019/06/pect_0303-043949f01a86f0403f8d181fd1caa704.png",
+    "minQuantity": 5,
+    "availableQuantity": 50,
+    "price": 20
+  },
+  {
+    "name": "Pliers",
+    "short": "The pliers available from a hardware store or other locations are Available ",
+    "image": "https://www.oreilly.com/content/wp-content/uploads/sites/2/2019/06/pect_0304-13a7adaa1c4b0f0e0f2bc9915874ac5a.png",
+    "minQuantity": 5,
+    "availableQuantity": 100,
+    "price": 23
+  },
+  {
+    "name": "Wire Cutters",
+    "short": "As with pliers, the typical wire cutters from the hardware store are suitable for cutting wires for home wiring and automotive work",
+    "image": "https://www.oreilly.com/content/wp-content/uploads/sites/2/2019/06/pect_0308-5ed00a32cb9c1ecfb111c8ba7f500394.png",
+    "minQuantity": 5,
+    "availableQuantity": 35,
+    "price": 35
+  },
+  {
+    "name": "Wire Strippers",
+    "short": "Trying to strip the insulation from wire using something like a pair of",
+    "image": "https://www.oreilly.com/content/wp-content/uploads/sites/2/2019/06/pect_0309-f58ce90fbe51975d15011b771a3cbd28.png",
+    "minQuantity": 5,
+    "availableQuantity": 70,
+    "price": 31
+  },
+  {
+    "name": "Crimping Tools",
+    "short": " crimping tool is essential. There really is no other way to make a good",
+    "image": "https://www.oreilly.com/content/wp-content/uploads/sites/2/2019/06/pect_0312-e78f3672a0679ce1db57fe17a49cd832.png",
+    "minQuantity": 5,
+    "availableQuantity": 60,
+    "price": 81
+  },
+  {
+    "name": "Socket and Hex Drivers",
+    "short": "Socket drivers made with seven metric sockets, and still other kits are available with long ",
+    "image": "https://www.oreilly.com/content/wp-content/uploads/sites/2/2019/06/pect_0313-9983bfb88b05eaa2df3b8527f8cd4385.png",
+    "minQuantity": 5,
+    "availableQuantity": 50,
+    "price": 23
+  }
+]
