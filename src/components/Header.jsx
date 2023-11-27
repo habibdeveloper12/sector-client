@@ -36,7 +36,7 @@ const Header = ({ children }) => {
         <input id="my-drawer-3" type="checkbox" class="drawer-toggle" />
         <div class="drawer-content flex flex-col">
           <div class="w-full navbar bg-gray-100 fixed drop-shadow-xl  top-0 z-50 lg:px-20">
-            <div class="flex-1 px-2 mx-2 text-2xl">Clean Co.</div>
+            <div class="flex-1 px-2 mx-2 text-2xl">Sector</div>
             <div class="flex-none lg:hidden">
               <label for="my-drawer-3" class="btn btn-square btn-ghost">
                 <svg

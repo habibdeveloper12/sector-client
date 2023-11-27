@@ -9,7 +9,7 @@ const Sectors = ({ name, agreeToTerms, sectors, handleEdit, id }) => {
             <ul>
               <li class="text-xl  text-gray-600 uppercase ">{name}</li>
             </ul>
-            <div className="flex flex-wrap gap-2">
+            <div className="flex flex-wrap lg:flex-row sm:flex-col gap-2">
               {sectors.map((item) => (
                 <div className="badge badge-primary">{item.label}</div>
               ))}

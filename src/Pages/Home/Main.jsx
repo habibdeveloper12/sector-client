@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useCallback } from "react";
 import "./main.css";
 import Form from "../../components/Form";
 import { useQuery } from "react-query";
@@ -7,7 +7,6 @@ import axios from "axios";
 import Loading from "../../components/Loading";
 import { fetchData } from "../../utils/fetchData";
 import { API_KEY } from "../../config/api";
-import { useCallback } from "react";
 const Main = () => {
   const [editData, setEditData] = useState(null);
   const { isLoading, isError, data, error, refetch } = useQuery(

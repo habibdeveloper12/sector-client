@@ -23,10 +23,6 @@ const Form = ({ refetch, editData, setEditData }) => {
     mode: "onChange",
   });
 
-  if (loading) {
-    <Loading />;
-  }
-
   useEffect(() => {
     if (editData?.data) {
       setValue("name", editData?.data.name || "");
@@ -35,6 +31,17 @@ const Form = ({ refetch, editData, setEditData }) => {
     }
   }, [editData, setValue]);
 
+  if (loading) {
+    <Loading />;
+  }
+
+  const addValue = useCallback(() => {
+    setEditData(null);
+    setValue("name", "");
+    setValue("sectors", []);
+    setValue("agreeToTerms", false);
+  }, []);
+
   const onSubmit = (data) => {
     if (editData?.data) {
       axios
@@ -42,8 +49,8 @@ const Form = ({ refetch, editData, setEditData }) => {
         .then(function (response) {
           setLoading(true);
           refetch();
-          setValue([], "sectors");
-          reset();
+          addValue();
+
           setLoading(false);
         })
         .catch(function (error) {
@@ -55,8 +62,7 @@ const Form = ({ refetch, editData, setEditData }) => {
         .then(function (response) {
           setLoading(true);
           refetch();
-          reset();
-          setValue([], "sectors");
+          addValue();
           setLoading(false);
         })
         .catch(function (error) {
@@ -80,15 +86,9 @@ const Form = ({ refetch, editData, setEditData }) => {
       });
   }, []);
 
-  const addValue = useCallback(() => {
-    setEditData(null);
-    setValue("name", "");
-    setValue("sectors", []);
-    setValue("agreeToTerms", false);
-  }, []);
   return (
     <div>
-      <div class="flex h-screen ">
+      <div class="flex py-32 ">
         <div class="m-auto">
           <form onSubmit={handleSubmit(onSubmit)}>
             <div>
