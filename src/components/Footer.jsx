@@ -1,12 +1,11 @@
-import React from 'react';
+import React from "react";
 
 const Footer = () => {
   return (
     <div>
-      <footer class="footer p-10 bg-base-200 text-base-content">
+      <footer class="footer p-10 shadow-xxl  bg-gray-100 text-base-content">
         <div>
-          <h1 className='text-3xl text-accent font-bold'>Shuvo-Tools</h1>
-
+          <h1 className="text-3xl text-accent font-bold">Sector Footer</h1>
         </div>
         <div>
           <span class="footer-title">Services</span>

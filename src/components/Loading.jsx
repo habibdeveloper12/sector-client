@@ -1,8 +1,8 @@
-import React from 'react';
+import React from "react";
 import { useState } from "react";
 import { css } from "@emotion/react";
 import ClipLoader from "react-spinners/ClipLoader";
-import { ClimbingBoxLoader } from 'react-spinners';
+import { ClimbingBoxLoader } from "react-spinners";
 
 // Can be a string as well. Need to ensure each key-value pair ends with ;
 const override = css`
@@ -11,25 +11,20 @@ const override = css`
   border-color: red;
 `;
 const Loading = () => {
-  let [loading, setLoading] = useState(true);
   let [color, setColor] = useState("#3b82f6");
-
-
-
 
   return (
     <div>
       <div className="sweet-loading absolute top-1/2 right-1/2">
-
-
         <ClimbingBoxLoader
-          color={color} loading={loading} css={override} size={60} />
+          color={color}
+          loading={true}
+          css={override}
+          size={60}
+        />
       </div>
     </div>
   );
-}
-
-
-
+};
 
 export default Loading;
